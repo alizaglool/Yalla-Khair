@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Zakat Calculater-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VCZakatCalcutatar" customModule="PrijectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="V6B-3a-aQP">
+                                <rect key="frame" x="30" y="64" width="354" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gold price :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfR-uB-8Jx">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="E1v-jY-A8Z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="f4s-ce-1LO">
+                                        <rect key="frame" x="0.0" y="40" width="354" height="35"/>
+                                        <color key="backgroundColor" red="0.082343794410000004" green="0.1274382174" blue="0.17050704359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="BorderColor">
+                                                <color key="value" red="0.18984528240000001" green="0.29365354729999998" blue="0.39389695479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRediuc">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="f4s-ce-1LO" secondAttribute="trailing" id="2E7-Pc-bpp"/>
+                                    <constraint firstItem="BfR-uB-8Jx" firstAttribute="top" secondItem="V6B-3a-aQP" secondAttribute="top" id="3mi-Gt-Ujv"/>
+                                    <constraint firstAttribute="trailing" secondItem="BfR-uB-8Jx" secondAttribute="trailing" id="HtC-5h-WbU"/>
+                                    <constraint firstItem="BfR-uB-8Jx" firstAttribute="leading" secondItem="V6B-3a-aQP" secondAttribute="leading" id="QBO-z0-GUP"/>
+                                    <constraint firstAttribute="trailing" secondItem="BfR-uB-8Jx" secondAttribute="trailing" id="df6-F7-68s"/>
+                                    <constraint firstItem="BfR-uB-8Jx" firstAttribute="top" secondItem="V6B-3a-aQP" secondAttribute="top" id="dv9-F4-PSC"/>
+                                    <constraint firstItem="f4s-ce-1LO" firstAttribute="leading" secondItem="V6B-3a-aQP" secondAttribute="leading" id="lbG-Sk-Sc4"/>
+                                    <constraint firstItem="BfR-uB-8Jx" firstAttribute="leading" secondItem="V6B-3a-aQP" secondAttribute="leading" id="qsB-Mk-aGF"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0Ps-ov-0AX">
+                                <rect key="frame" x="30" y="159" width="354" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount of Money :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgA-tb-eVL">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="vuY-En-qY5">
+                                        <rect key="frame" x="0.0" y="40" width="354" height="35"/>
+                                        <color key="backgroundColor" red="0.082343794410000004" green="0.1274382174" blue="0.17050704359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="zLd-8i-DB8"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="BorderColor">
+                                                <color key="value" red="0.18984528240000001" green="0.29365354729999998" blue="0.39389695479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRediuc">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ix-Jp-MCH">
+                                <rect key="frame" x="40" y="737" width="334" height="40"/>
+                                <color key="backgroundColor" red="0.13990083340000001" green="0.63136011359999999" blue="0.94819134469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2W2-1u-8I7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Zakat calculation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRediuc">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ZakatCalculaterAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pUx-DF-sDL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ux-Dr-v0W">
+                                <rect key="frame" x="40" y="787" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5FG-N5-Apt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="clear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="BorderColor">
+                                        <color key="value" red="0.13990083340000001" green="0.63136011359999999" blue="0.94819134469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRediuc">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y9H-qq-LCU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJx-Ol-6by">
+                                <rect key="frame" x="40" y="274" width="334" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="AD2-Qs-RRt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082343794410000004" green="0.1274382174" blue="0.17050704359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GJx-Ol-6by" firstAttribute="top" secondItem="0Ps-ov-0AX" secondAttribute="bottom" constant="40" id="5TH-U1-uzF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Ix-Jp-MCH" secondAttribute="trailing" constant="40" id="9Yy-h5-okB"/>
+                            <constraint firstItem="0Ps-ov-0AX" firstAttribute="top" secondItem="V6B-3a-aQP" secondAttribute="bottom" constant="20" id="ANJ-A2-1YX"/>
+                            <constraint firstItem="6Ix-Jp-MCH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Ntc-5e-gYK"/>
+                            <constraint firstItem="4ux-Dr-v0W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ObU-ap-fkg"/>
+                            <constraint firstItem="GJx-Ol-6by" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="PMA-LB-zRu"/>
+                            <constraint firstItem="4ux-Dr-v0W" firstAttribute="top" secondItem="6Ix-Jp-MCH" secondAttribute="bottom" constant="10" id="SJo-j7-HkP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ux-Dr-v0W" secondAttribute="trailing" constant="40" id="ULA-fV-dfL"/>
+                            <constraint firstItem="V6B-3a-aQP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Ynp-E2-7JE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GJx-Ol-6by" secondAttribute="trailing" constant="40" id="YpQ-vZ-TVs"/>
+                            <constraint firstItem="V6B-3a-aQP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bGj-Wk-LKN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4ux-Dr-v0W" secondAttribute="bottom" constant="35" id="mUV-bF-wxj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Ps-ov-0AX" secondAttribute="trailing" constant="30" id="pP7-zi-JBx"/>
+                            <constraint firstItem="0Ps-ov-0AX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="uzm-sT-ixJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V6B-3a-aQP" secondAttribute="trailing" constant="30" id="yQf-ks-Hz8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Zakat Calculater" id="v06-jG-4NT">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu_white_3x" id="EaK-eM-UFV">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="ButtonMuneBarAction:" destination="BYZ-38-t0r" id="da9-Aw-mNv"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="698838-icon-111-search-128" id="Wts-2F-fLP">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="FiledAmountOfMoney" destination="vuY-En-qY5" id="Brr-Zg-FF7"/>
+                        <outlet property="FiledPriceGold" destination="f4s-ce-1LO" id="dlB-5E-iX5"/>
+                        <outlet property="lblResult" destination="GJx-Ol-6by" id="224-DI-UHC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1350.7246376811595" y="123.21428571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="698838-icon-111-search-128" width="64" height="64"/>
+        <image name="ic_menu_white_3x" width="36" height="36"/>
+    </resources>
+</document>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sttings-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VCSetting" customModule="PrijectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fM2-aP-oYS">
+                                <rect key="frame" x="20" y="64" width="374" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="language-languages-128" translatesAutoresizingMaskIntoConstraints="NO" id="syu-Xe-EYG">
+                                        <rect key="frame" x="5" y="10" width="40" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="QFY-JJ-Mni"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79b-Ay-Zu2">
+                                        <rect key="frame" x="287" y="8" width="85" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="xYn-mU-ujE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <state key="normal" title="Arabic">
+                                            <color key="titleColor" red="0.13990083340000001" green="0.63136011359999999" blue="0.94819134469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language : English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfH-sG-RPc">
+                                        <rect key="frame" x="53" y="8" width="150" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="ieI-td-wOh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.082343794410000004" green="0.1274382174" blue="0.17050704359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="79b-Ay-Zu2" firstAttribute="top" secondItem="fM2-aP-oYS" secondAttribute="top" constant="8" id="6Vf-dT-bww"/>
+                                    <constraint firstItem="syu-Xe-EYG" firstAttribute="leading" secondItem="fM2-aP-oYS" secondAttribute="leading" constant="5" id="6er-xg-9QE"/>
+                                    <constraint firstItem="syu-Xe-EYG" firstAttribute="top" secondItem="fM2-aP-oYS" secondAttribute="top" constant="10" id="AsS-o7-HqC"/>
+                                    <constraint firstAttribute="bottom" secondItem="syu-Xe-EYG" secondAttribute="bottom" constant="10" id="AyX-e8-Gxb"/>
+                                    <constraint firstItem="HfH-sG-RPc" firstAttribute="leading" secondItem="syu-Xe-EYG" secondAttribute="trailing" constant="8" id="CdN-WI-6Xb"/>
+                                    <constraint firstAttribute="bottom" secondItem="79b-Ay-Zu2" secondAttribute="bottom" constant="8" id="PGj-y9-1ON"/>
+                                    <constraint firstAttribute="bottom" secondItem="HfH-sG-RPc" secondAttribute="bottom" constant="8" id="RMV-LM-Szp"/>
+                                    <constraint firstItem="HfH-sG-RPc" firstAttribute="top" secondItem="fM2-aP-oYS" secondAttribute="top" constant="8" id="YBY-su-01J"/>
+                                    <constraint firstAttribute="height" constant="50" id="gyC-BM-kkK"/>
+                                    <constraint firstAttribute="trailing" secondItem="79b-Ay-Zu2" secondAttribute="trailing" constant="2" id="q0V-iN-0ng"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="BorderColor">
+                                        <color key="value" red="0.18984528240000001" green="0.29365354729999998" blue="0.39389695479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRediuc">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWd-m1-oGP">
+                                <rect key="frame" x="20" y="124" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QW-yP-KTz">
+                                        <rect key="frame" x="45" y="10" width="319" height="30"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="4"/>
+                                        <state key="normal" title="  logout"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account-logout-128" translatesAutoresizingMaskIntoConstraints="NO" id="Vx0-kH-smO">
+                                        <rect key="frame" x="5" y="10" width="40" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ifW-fq-SfO"/>
+                                            <constraint firstAttribute="width" constant="40" id="tdb-1d-3m2"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.082343794410000004" green="0.1274382174" blue="0.17050704359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Vx0-kH-smO" firstAttribute="leading" secondItem="xWd-m1-oGP" secondAttribute="leading" constant="5" id="4HA-r7-vVU"/>
+                                    <constraint firstAttribute="bottom" secondItem="0QW-yP-KTz" secondAttribute="bottom" constant="10" id="Aue-Iz-Ozd"/>
+                                    <constraint firstItem="0QW-yP-KTz" firstAttribute="top" secondItem="xWd-m1-oGP" secondAttribute="top" constant="10" id="CGa-Uz-WCn"/>
+                                    <constraint firstAttribute="height" constant="50" id="Eb2-PD-dRA"/>
+                                    <constraint firstAttribute="trailing" secondItem="0QW-yP-KTz" secondAttribute="trailing" constant="10" id="NIp-1S-Axo"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vx0-kH-smO" secondAttribute="bottom" constant="10" id="Ykv-Cw-Kix"/>
+                                    <constraint firstItem="Vx0-kH-smO" firstAttribute="top" secondItem="xWd-m1-oGP" secondAttribute="top" constant="10" id="eja-Jt-XlC"/>
+                                    <constraint firstItem="0QW-yP-KTz" firstAttribute="leading" secondItem="Vx0-kH-smO" secondAttribute="trailing" id="l0f-89-NyZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="BorderColor">
+                                        <color key="value" red="0.18984528240000001" green="0.29365354729999998" blue="0.39389695479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRediuc">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082343794410000004" green="0.1274382174" blue="0.17050704359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xWd-m1-oGP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hfg-Of-3pf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fM2-aP-oYS" secondAttribute="trailing" constant="20" id="cl2-SG-YMR"/>
+                            <constraint firstItem="xWd-m1-oGP" firstAttribute="top" secondItem="fM2-aP-oYS" secondAttribute="bottom" constant="10" id="dfj-I2-O03"/>
+                            <constraint firstItem="fM2-aP-oYS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gxo-CP-NpU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xWd-m1-oGP" secondAttribute="trailing" constant="20" id="if9-ac-bIw"/>
+                            <constraint firstItem="fM2-aP-oYS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uz7-Gg-6QF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sttings" id="IGZ-VL-etT">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu_white_3x" id="UKi-Up-06c">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="698838-icon-111-search-128" id="IEP-uJ-57c">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528.985507246377" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="698838-icon-111-search-128" width="64" height="64"/>
+        <image name="account-logout-128" width="64" height="64"/>
+        <image name="ic_menu_white_3x" width="36" height="36"/>
+        <image name="language-languages-128" width="64" height="64"/>
+    </resources>
+</document>
